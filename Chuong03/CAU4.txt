@@ -1,0 +1,11 @@
+Các biến quyết định:
+- X1: số lượng ổ bánh mì dài trong một ngày (X1 <= 500)
+- X2: số lượng ổ bánh mì tròn trong một ngày (X2 <= 500)
+
+Các biến kết quả:
+- Tổng lợi nhuận Z
+Mục tiêu:
+- Tổng lợi nhuận Z cao nhất: 325 * X1 + 220 * X2 - 0.3 (400 X1 + 250 X2)
+Các ràng buộc: 
+- Số lượng bột cung cấp: 400 * X1 + 250 * X2 <= 225 000
+- Số giờ nấu được:  0 <= X1/75 + X2/100 <= 8

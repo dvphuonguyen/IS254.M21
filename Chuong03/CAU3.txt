@@ -1,0 +1,25 @@
+Các biến quyết định:
+- X1: số lượng phân bón từ kho Thủ Đức đến Quảng Nam (X1 >= 0)
+- X2: số lượng phân bón từ kho Thủ Đức đến Quảng Ngãi (X2 >= 0)
+- X3: số lượng phân bón từ kho Thủ Đức đến Bình Định (X3 >= 0)
+- X4: số lượng phân bón từ kho Thủ Đức đến Phú Yên (X4 >= 0)
+- X5: số lượng phân bón từ kho Bình Tân đến Quảng Nam (X5 >= 0)
+- X6: số lượng phân bón từ kho Bình Tân đến Quảng Ngãi (X6 >= 0)
+- X7: số lượng phân bón từ kho Bình Tân đến Bình Định (X7 >= 0)
+- X8: số lượng phân bón từ kho Bình Tân đến Phú Yên (X8 >= 0)
+- X9: số lượng phân bón từ kho Bình Chánh đến Quảng Nam  (X9 >= 0)
+- X10: số lượng phân bón từ kho Bình Chánh đến Quảng Ngãi  (X10 >= 0)
+- X11: số lượng phân bón từ kho Bình Chánh đến Bình Định (X11 >= 0)
+- X12: số lượng phân bón từ kho Bình Chánh đến Phú Yên (X12 >= 0)
+Các biến kết quả
+- Tổng chi phí vận chuyển Z
+Mục tiêu:
+- Tổng chi phí vận chuyển Z thấp nhất: X1 + X2 + 3 * X3 + 5 * X4 + 3 * X5 + 2 * X6 + 4 * X7 + 3 * X8 + 2 * 9 + X10 + X11 + 2 * X12
+Các ràng buộc:
+- Số lượng tối đa kho hàng Thủ Đức có thể cung cấp là: X1 + X2 + X3 + X4 <= 10
+- Số lượng tối đa kho hàng Bình Tân có thể cung cấp là: X5 + X6 + X7 + X8 <= 30
+- Số lượng tối đa kho hàng Bình Chánh có thể cung cấp là: X9 + X10 + X11 + X12 <= 20
+- Số lượng đặt hàng ở Quảng Nam là: X1 + X5 + X9 = 5
+- Số lượng đặt hàng ở Quảng Ngãi là: X2 + X6 + X10 = 20
+- Số lượng đặt hàng ở Bình Định là: X3 + X7 + X11 = 10
+- Số lượng đặt hàng ở Phú Yên là: X4 + X8 + X12 = 25

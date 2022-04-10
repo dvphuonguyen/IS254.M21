@@ -1,0 +1,39 @@
+Các biến quyết định:
+- X1: lượng xăng chuyển từ Kho 1 đên cây xăng 1 (X1 >= 0)
+- X2: lượng xăng chuyển từ Kho 1 đên cây xăng 2 (X2 >= 0)
+- X3: lượng xăng chuyển từ Kho 1 đên cây xăng 3 (X3 >= 0)
+- X4: lượng xăng chuyển từ Kho 1 đên cây xăng 4 (X4 >= 0)
+- X5: lượng xăng chuyển từ Kho 1 đên cây xăng 5 (X5 >= 0)
+- X6: lượng xăng chuyển từ Kho 2 đên cây xăng 1 (X6 >= 0)
+- X7: lượng xăng chuyển từ Kho 2 đên cây xăng 2 (X7 >= 0)
+- X8: lượng xăng chuyển từ Kho 2 đên cây xăng 3 (X8 >= 0)
+- X9: lượng xăng chuyển từ Kho 2 đên cây xăng 4 (X9 >= 0)
+- X10: lượng xăng chuyển từ Kho 2 đên cây xăng 5 (X10 >= 0)
+- X11: lượng xăng chuyển từ Kho 3 đên cây xăng 1 (X11 >= 0)
+- X12: lượng xăng chuyển từ Kho 3 đên cây xăng 2 (X12 >= 0)
+- X13: lượng xăng chuyển từ Kho 3 đên cây xăng 3 (X13 >= 0)
+- X14: lượng xăng chuyển từ Kho 3 đên cây xăng 4 (X14 >= 0)
+- X15: lượng xăng chuyển từ Kho 3 đên cây xăng 5 (X15 >= 0)
+- X16: lượng xăng chuyển từ Kho 4 đên cây xăng 1 (X16 >= 0)
+- X17: lượng xăng chuyển từ Kho 4 đên cây xăng 2 (X17 >= 0)
+- X18: lượng xăng chuyển từ Kho 4 đên cây xăng 3 (X18 >= 0)
+- X19: lượng xăng chuyển từ Kho 4 đên cây xăng 4 (X19 >= 0)
+- X20: lượng xăng chuyển từ Kho 4 đên cây xăng 5 (X20 >= 0)
+Các biến kết quả:
+- Tổng chi phí vận chuyển Z
+Mục tiêu:
+- Tổng chi phí vận chuyển Z thấp nhất:
+60 * X1 + 54 * X2 + 52 * X3 + 18 * X4 + 46 * X5 +
+26 * X6 + 8 * X7 + 44 * X8 + 6 * X9 + 2 * X10 + 
+6 * X11 + 2 * X12 + 10 * X13 + 8 * X14 + 48 * X15 + 
+32 * X16 + 60 * X17 + 34 * X18 + 20 * X19 + 32 * X20
+Các ràng buộc:
+- Lượng xăng dự trữ kho 1: X1 + X2 + X3 + X4 + X5 = 8
+- Lượng xăng dự trữ kho 2: X6 + X7 + X8 + X9 + X10 = 12
+- Lượng xăng dự trữ kho 3: X11 + X12 + X13 + X14 + X15 = 20
+- Lượng xăng dự trữ kho 4: X16 + X17 + X18 + X19 + X20 = 20
+- Lượng xăng cây xăng 1 cần: X1 + X6 + X11 + X16 = 14
+- Lượng xăng cây xăng 2 cần: X2 + X7 + X12 + X17 = 14
+- Lượng xăng cây xăng 3 cần: X3 + X8 + X13 + X18 = 14
+- Lượng xăng cây xăng 4 cần: X4 + X9 + X14 + X19 = 14
+- Lượng xăng cây xăng 5 cần: X5 + X10 + X15 + X20 = 4
